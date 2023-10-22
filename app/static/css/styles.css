@@ -6,13 +6,42 @@ body{
 
 .task-container {
     max-width: 400px; /* Set the maximum width for each task container */
-    margin: 0 auto; /* Center the container horizontally */
+    margin: 0 auto;
+    padding: 10px; 
 }
 
 .task-form-container {
     max-width: 400px; /* Set the maximum width for the task form container */
     margin: 0 auto; /* Center the container horizontally */
+    position: relative;
+    left: 20px;
 }
+
+.edit-task-form-container {
+    max-width: 400px; /* Set the maximum width for the task form container */
+    margin: 0 auto; /* Center the container horizontally */
+    position: relative;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 
 .task-item {
     display: flex;
@@ -39,14 +68,13 @@ body{
     backdrop-filter: blur(10px);
     border-radius: 10px;
     padding: 20px;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 .buttons {
     display: flex;
     flex-direction: row;
 }
-
 
 .btn-edit {
     display: inline-block;
@@ -67,4 +95,45 @@ body{
     border-radius: 4px;
     font-weight: bold;
     margin-left: 10px; /* Add some spacing between Edit and Delete buttons */
+}
+
+.btn-update {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: greenyellow;
+    color: #000;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: blue; /* Red color for deletion */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.add-task {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: green;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.title-container {
+    display: flex;
+    position: relative;
+    left: 20px;
+    align-items: center;
+    justify-content: center;
 }
