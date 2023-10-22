@@ -1,0 +1,39 @@
+# Flask Project installation guide
+
+## Prerequisites
+
+- Python 3
+- pip
+
+Steps:
+
+1. Clone the project using the following command / link:
+
+git clone https://github.com/massarobert94/python-flask-project.git
+
+2. Navigate to the project directory:
+
+cd python-flask-project
+
+3. Create a virtual environment:
+
+python3 -m venv venv
+
+4. Activate the virtual environment:
+
+a) on Mac / Linux:
+    source venv/bin/activate 
+
+b) on Windows:
+    .\venv\Scripts\Activate
+
+5. Install project dependencies by running the following commands:
+
+a) Flask: pip install Flask
+b) Flask-SQLAlchemy: pip install Flask-SQLAlchemy
+c) Flask-Migrate: pip install Flask-Migrate
+d) Flask-WTF: pip install Flask-WTF
+
+6. Run the program: python run.py
+
+7. Open the program in your web browser at the following location: http://127.0.0.1:5000
